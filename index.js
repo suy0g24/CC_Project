@@ -1,17 +1,17 @@
 // index.js
+import { async } from 'regenerator-runtime';
 import 'regenerator-runtime/runtime'
 
 const { BlobServiceClient } = require("@azure/storage-blob");
-
 const createContainerButton = document.getElementById("create-container-button");
 const deleteContainerButton = document.getElementById("delete-container-button");
 const selectButton = document.getElementById("select-button");
 const fileInput = document.getElementById("file-input");
 const listButton = document.getElementById("list-button");
 const deleteButton = document.getElementById("delete-button");
+const logoutButton = document.getElementById("LogOut-but");
 const status = document.getElementById("status");
 const fileList = document.getElementById("file-list");
-
 const blobSasUrl = "https://forgivenazureproject.blob.core.windows.net/?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2021-10-28T02:15:38Z&st=2021-10-27T18:15:38Z&spr=https&sig=BcRFcgvnVeJf3lLLt7EkmWa61gKsEuqxy%2F%2FqTo4YcsA%3D";
 
 // Create a new BlobServiceClient
@@ -115,3 +115,9 @@ const deleteFiles = async () => {
 };
 
 deleteButton.addEventListener("click", deleteFiles);
+
+
+const logout = async() => {
+    window.location.replace("./login-cc.html");
+}
+logoutButton.addEventListener("click",logout)
