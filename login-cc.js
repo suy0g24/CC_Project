@@ -34,10 +34,10 @@ const myFunction = async() => {
                 console.log(item.password);*/
                 window.location.replace("./index.html");
             }else{
-                //alert("Wrong UserName OR Password");
+                alert("Wrong UserName OR Password");
             }
         }else{
-           // alert("Wrong UserName OR Password");
+           alert("Wrong UserName OR Password");
         }
             //console.log(`${item.id} ${item.name} ${item.password}`); 
     });
