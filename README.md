@@ -20,8 +20,4 @@ If you receive a message that says configured port 1234 could not be used, you c
 parcel -p <port#> index.html. 
 In the launch.json file, update the port in the URL path to match.
 
-********************************************************************************************************************************************************
-
-Further Developement : 
-1. Can use login credentials to access the web page making it more secure
 
