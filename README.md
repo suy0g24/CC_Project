@@ -20,6 +20,3 @@ Parcel bundles your code and starts a local development server for your page at 
 If you receive a message that says configured port 1234 could not be used, you can change the port by running the command 
 parcel -p <port#> index.html. 
 In the launch.json file, update the port in the URL path to match.
-
-
-
